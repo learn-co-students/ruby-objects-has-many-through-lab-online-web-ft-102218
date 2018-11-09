@@ -14,7 +14,7 @@ describe 'Genre' do
       rap = Genre.new('rap')
       Song.new('99 Problems', jay_z, rap)
       shrimp = Song.new('Big Shrimpin', jay_z, rap)
-
+      #binding.pry
       expect(rap.songs).to include(shrimp)
     end
   end
@@ -40,7 +40,7 @@ describe 'Genre' do
       rap = Genre.new('rap')
       ninenty_nine_problems = Song.new('99 Problems', jay_z, rap)
       humble = Song.new('HUMBLE', kendrick, rap)
-
+      #binding.pry
       expect(rap.artists).to include(jay_z)
       expect(rap.artists).to include(kendrick)
     end
